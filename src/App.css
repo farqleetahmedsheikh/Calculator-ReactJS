@@ -1,0 +1,177 @@
+/* Base styles for the body */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+/* Styles for the calculator container */
+.calculator {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  padding: 20px;
+}
+
+/* Styles for the display screen */
+.display {
+  width: 93%;
+  background-color: #222;
+  color: #fff;
+  font-size: 2em;
+  text-align: right;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Styles for the buttons container */
+.buttons-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Base styles for buttons */
+button {
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover and active states for buttons */
+button:hover {
+  background-color: #d0d0d0;
+}
+
+button:active {
+  background-color: #c0c0c0;
+}
+
+/* Styles for operator buttons */
+button.operator {
+  background-color: #f9a825;
+  color: #fff;
+}
+
+button.operator:hover {
+  background-color: #f57f17;
+}
+
+button.operator:active {
+  background-color: #ef6c00;
+}
+
+/* Styles for the equal button */
+button.equal {
+  background-color: #4caf50;
+  color: #fff;
+  grid-column: span 2;
+}
+
+button.equal:hover {
+  background-color: #43a047;
+}
+
+button.equal:active {
+  background-color: #388e3c;
+}
+
+/* Styles for the clear button */
+button.clear {
+  background-color: #e57373;
+  color: #fff;
+}
+
+button.clear:hover {
+  background-color: #ef5350;
+}
+
+button.clear:active {
+  background-color: #d32f2f;
+}
+
+/* Styles for the zero button */
+button.zero {
+  grid-column: span 2;
+}
+
+/* Make the calculator responsive */
+@media (max-width: 480px) {
+  .calculator {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .display {
+    font-size: 1.5em;
+    padding: 5px;
+  }
+
+  button {
+    padding: 10px !important;
+    font-size: 1.2em !important;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .calculator {
+    width: 80%;
+    padding: 15px;
+  }
+
+  .display {
+    font-size: 1.75em;
+    padding: 8px;
+  }
+
+  button {
+    padding: 18px !important;
+    font-size: 1.1em !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+}
+
+/* Styles for large devices */
+@media (min-width: 769px) {
+  .calculator {
+    width: 320px;
+    padding: 20px;
+  }
+
+  .display {
+    font-size: 2em;
+    padding: 10px;
+  }
+
+  button {
+    padding: 20px !important;
+    font-size: 1.2em !important;
+  }
+}
+
+.buttons-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
